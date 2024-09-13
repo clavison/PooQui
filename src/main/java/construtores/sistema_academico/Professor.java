@@ -17,5 +17,15 @@ public class Professor {
 		this.nome = nome;
 		this.formacao = formacao;
 	}
+	
+	@Override
+	public String toString() {
+		String f = "Graduação";
+		if( formacao == 2)
+			f = "Especialização";
+		if(formacao == 3)
+			f = "Pós graduação";
+		return nome +" - " + f;
+	}
 
 }
